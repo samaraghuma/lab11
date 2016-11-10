@@ -8,6 +8,14 @@ namespace lab11
 {
     class student:person
     {
+
+        private string program;
+
+        private int year;
+
+        private double fee;
+
+
         public student(string name, string address, string program, int year, double fee) : base(name, address)
 
         {
@@ -22,12 +30,12 @@ namespace lab11
         {
             get
             {
-                return Program;
+                return program;
             }
 
             set
             {
-                Program = value;
+                program = value;
             }
         }
 
@@ -35,12 +43,12 @@ namespace lab11
         {
             get
             {
-                return Year;
+                return year;
             }
 
             set
             {
-                Year = value;
+                year = value;
             }
         }
 
@@ -48,12 +56,12 @@ namespace lab11
         {
             get
             {
-                return Fee;
+                return fee;
             }
 
             set
             {
-                Fee = value;
+                fee = value;
             }
         }
         public override string ToString()

@@ -7,11 +7,18 @@ using System.Threading.Tasks;
 namespace lab11
 {
     class staff : person
+        
+
     {
+        private string school;
+
+        private double pay;
+
+
         public staff(string name, string adress, string school, double pay) : base(name, adress)
         {
             this.School = school;
-            this.pay = pay;
+            this.Pay = pay;
 
 
         }
@@ -19,15 +26,15 @@ namespace lab11
         {
             get
             {
-                return School;
+                return school;
             }
 
             set
             {
-                School = value;
+                school = value;
             }
         }
-        public double pay
+        public double Pay
         {
             get
             {
